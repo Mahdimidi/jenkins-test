@@ -16,14 +16,14 @@ pipeline {
         }
         stage ("Generate Docker image") {
             steps {
-                dir ("angpipe"){
+                dir ("jenkinstest"){
                     sh "docker build -f dockerfile -t malbouz/angpipe:1.1.1 ."        
                 }
             }
         }
         stage ("execute docker compose") {
             steps {
-                dir ("angpipe"){
+                dir ("jenkinstest"){
                     sh "docker compose up -d"        
                 }
             }
