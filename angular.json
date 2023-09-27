@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "testjenkins"
+  "defaultProject": "testjenkins",
+  "cli": {
+    "analytics": "da9c06a6-59b5-4ac9-8c8e-4d6472e02241"
+  }
 }
