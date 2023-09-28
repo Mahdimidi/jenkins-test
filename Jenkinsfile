@@ -17,7 +17,7 @@ pipeline {
         stage ("Generate Docker image") {
             steps {
                 dir ("jenkinstest"){
-                    sh "docker build -f dockerfile -t malbouz/angpipe:1.1.1 ."        
+                    sh "docker build -f dockerfile -t jenkinstest ."        
                 }
             }
         }
