@@ -1,5 +1,5 @@
 services:
     app:
-      image: jenkinstest
+      image: jenkins-test
       ports:
         - "0.0.0.0:4200:80"
