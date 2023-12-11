@@ -23,7 +23,7 @@ pipeline {
         }
         stage ("execute docker compose") {
             steps {
-                dir ("jenkinstest"){
+                dir ("jenkins-test"){
                     sh "docker compose up -d"        
                 }
             }
