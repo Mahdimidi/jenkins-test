@@ -16,7 +16,7 @@ pipeline {
         }
         stage ("Generate Docker image") {
             steps {
-                dir ("jenkinstest"){
+                dir ("jenkins-test"){
                     sh "docker build -f dockerfile -t jenkins-test ."        
                 }
             }
