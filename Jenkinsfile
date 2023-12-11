@@ -11,7 +11,7 @@ pipeline {
         }
         stage ("Clone Repo") {
             steps {
-                sh "git clone https://github.com/MaBouz/jenkinstest.git"
+                sh "git clone https://github.com/Mahdimidi/jenkins-test.git"
             }
         }
         stage ("Generate Docker image") {
